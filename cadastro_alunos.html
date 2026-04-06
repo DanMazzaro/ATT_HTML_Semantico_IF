@@ -3,9 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de alunos</title>
 </head>
 <body>
-    
+    <form>
+        nome completo: <input type="text" name="nomealuno" required><br><br>
+        email: <input type="text" name="emailaluno" required><br><br>
+        digite uma senha: <input type="password" name="senha" required><br><br>
+        confirmar senha: <input type="password" name="cfsenha" required><br><br>
+        data de nacimento: <input type="date" name="dtnacimento" required><br><br>
+        genero: <input type="radio" id="masculino" name="sexo" value="M"> masculino
+                <input type="radio" id="feminino" name="sexo" value="F"> feminino<br><br>
+        <details>
+            <summary>termo de uso</summary>
+            <p> esses sao os termos e condicoes to com preguiça de digitar mais coisa</p>
+        </details><br>
+        aceitar termos de uso: <input type="checkbox" name="termosdeuso" required><br><br>
+        <input type="submit" name="btenviar" value="enviar">
+        <input type="reset" name="btreset" value="limpar"><br>
 </body>
 </html>
