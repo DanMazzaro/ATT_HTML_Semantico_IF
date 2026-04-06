@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento</title>
+</head>
+<body>
+    <form action="" method="post">
+
+        <label for="nome">nome completo: </label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">email: </label>
+        <input type="text" id="email" name="email" required><br><br>
+
+        <label for="telefone">telefone: </label>
+        <input type="text" id="telefone" name="telefone" required><br><br>
+
+        <label for="tpatendimento">tipo de atendimento: </label>
+        <select name="tpatendimento" id="tpatendimento" required><br><br>
+            <option value="">escolha uma opção</option>
+            <option value="1">duvida</option>
+            <option value="2">reclamação</option>
+            <option value="3">sugestão</option>
+        </select>
+
+        <br><br>
+
+        <label for="prioridade">prioridade: </label>
+        <input type="radio" name="prioridade" id="baixa" required>baixa
+        <input type="radio" name="prioridade" id="media" required>media
+        <input type="radio" name="prioridade" id="alta" required>alta
+        
+        <br><br>
+
+        <label for="dscr">descrição detalhada: </label>
+        <textarea name="descricao" id="dscr" required></textarea><br><br>
+
+        <label for="arq">anexar arquivo: </label>
+        <input type="file" name="arquivo" id="arq" required><br><br>
+
+        <label for="atctt">autorizo contato: </label>
+        <input type="checkbox" name="autorizarctt" id="atctt" required><br><br>
+
+        <input type="submit" value="enviar">
+
+
+    </form>
+</body>
+</html>

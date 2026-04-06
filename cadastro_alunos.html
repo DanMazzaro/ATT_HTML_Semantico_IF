@@ -10,22 +10,34 @@
 
     <form action="" method="post">
 
-        nome completo: <input type="text" name="nomealuno" required><br><br>
-        email: <input type="text" name="emailaluno" required><br><br>
-        digite uma senha: <input type="password" name="senha" required><br><br>
-        confirmar senha: <input type="password" name="cfsenha" required><br><br>
-        data de nacimento: <input type="date" name="dtnacimento" required><br><br>
-        genero: <input type="radio" id="masculino" name="sexo" value="M"> masculino
-                <input type="radio" id="feminino" name="sexo" value="F"> feminino<br><br>
+        <label for="nomealuno">nome completo: </label>
+        <input type="text" id="nomealuno" name="nomealuno" required><br><br>
+
+        <label for="emailaluno">email: </label>
+        <input type="text" id="emailaluno" name="emailaluno" required><br><br>
+
+        <label for="senha">senha: </label>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <label for="cfsenha">confirmar senha: </label>
+        <input type="password" id="cfsenha" name="cfsenha" required><br><br>
+
+        <label for="dtnacimento">data de nacimento: </label>
+        <input type="date" id="dtnacimento" name="dtnacimento" required><br><br>
+
+        <label for="masculino">genero: </label>
+        <input type="radio" id="masculino" name="sexo" value="M"> masculino
+        <input type="radio" id="feminino" name="sexo" value="F"> feminino<br><br>
 
         <details>
 
             <summary>termo de uso</summary>
             <p> esses sao os termos e condicoes to com preguiça de digitar mais coisa</p>
-            
+
         </details><br>
 
-        aceitar termos de uso: <input type="checkbox" name="termosdeuso" required><br><br>
+        <label for="termosdeuso">aceito todos os termos: </label>
+        <input type="checkbox" id="termosdeuso" name="termosdeuso" required><br><br>
 
         <input type="submit" name="btenviar" value="enviar">
         <input type="reset" name="btreset" value="limpar"><br>
